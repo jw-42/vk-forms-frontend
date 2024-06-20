@@ -1,0 +1,45 @@
+{
+  "name": "vk-forms-frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@redux-devtools/extension": "^3.3.0",
+    "@reduxjs/toolkit": "^2.2.5",
+    "@tanstack/react-query": "^5.45.1",
+    "@vkontakte/icons": "^2.121.0",
+    "@vkontakte/vk-bridge": "^2.14.2",
+    "@vkontakte/vk-bridge-react": "^1.0.1",
+    "@vkontakte/vk-mini-apps-router": "^1.4.5",
+    "@vkontakte/vk-miniapps-deploy": "^0.1.8",
+    "@vkontakte/vkui": "^6.1.1",
+    "@vkontakte/vkui-tokens": "^4.47.0",
+    "axios": "^1.7.2",
+    "chart.js": "^4.4.3",
+    "dotenv": "^16.4.5",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-content-loader": "^7.0.2",
+    "react-dom": "^18.2.0",
+    "react-redux": "^9.1.2",
+    "redux": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  }
+}
