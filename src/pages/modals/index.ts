@@ -1,0 +1,1 @@
+export { UpdateFormModal } from "./updateFormModal/index";
