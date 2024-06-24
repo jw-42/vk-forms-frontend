@@ -13,6 +13,7 @@ import {
   Link,
 } from "@vkontakte/vkui";
 import baseTheme from "@vkontakte/vkui-tokens/themes/vkBase/cssVars/theme";
+import { CustomDate } from "@shared/ui/customDate";
 
 export function FormInfo() {
   const router = useRouteNavigator();
@@ -41,7 +42,7 @@ export function FormInfo() {
           <Spacing />
 
           <Text style={{ color: baseTheme.colorTextSecondary.normal.value }}>
-            {data?.data?.response?.created_at} • {(data?.data?.response?.can_edit) && (<Link onClick={handleUpdate}>Редактировать</Link>)}
+            <CustomDate mode="default" date={data?.data?.response?.created_at} /> • {(data?.data?.response?.can_edit) && (<Link onClick={handleUpdate}>Редактировать</Link>)}
           </Text>
         </Div>
       ) : (

@@ -3,6 +3,7 @@ import { Icon24MoreHorizontal } from "@vkontakte/icons";
 import { useRouteNavigator } from "@vkontakte/vk-mini-apps-router";
 import { AppRoutes } from "@app/router/AppRouter";
 import { Form } from "../model/form";
+import { CustomDate } from "@shared/ui/customDate";
 
 export function FormItem(props: Form) {
 
@@ -14,7 +15,7 @@ export function FormItem(props: Form) {
         AppRoutes.forms.blank.questions,
         { "id": props.id }
       )}
-      subtitle={props.updated_at}
+      subtitle={<CustomDate mode="default" date={props.updated_at} />}
       after={<IconButton aria-label="more-actions" onClick={(e) => {
         e.stopPropagation();
       }}>
